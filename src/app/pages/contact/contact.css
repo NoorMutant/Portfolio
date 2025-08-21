@@ -259,9 +259,9 @@ h3{
     justify-content: start;
     text-align: left;
     /* white-space: wrap; */
-    padding: 4.5%;
-    padding-right: 0px;
-    margin-left: 10%;
+    width: inherit;
+    padding: 1%;
+    margin: 1%;
 }
 .contact-bottom{
     font-size: 20px;
@@ -286,14 +286,15 @@ h3{
 }
 
 @media (max-width: 576px) {
-.input-container{
+.input-container-contact{
     align-items: center;
     justify-content: center;
     text-align: center;
     white-space: wrap;
-    padding: 1%;
+    /* padding: 1%; */
+    padding-left: 6%;
     margin: 1%;
-width: 100%;
+/* width: 100%; */
 }
 .text-wrap-left{
   width:auto;
