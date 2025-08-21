@@ -1,0 +1,233 @@
+#portfolio {
+  padding: 70px 0 100px;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--black-grey);
+}
+
+.heading-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.title-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--main-color);
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+
+.ruler {
+    height: 3px;
+    width: 11rem;
+    border-width: 2px;
+    margin-top: 0px;
+    color: var(--whitish);
+    background-color: var(--whitish);
+    z-index: 10;
+}
+.ruler-short {
+    position: absolute;
+    top: 40%;
+   z-index: 12;
+    width: 4rem;
+    border-width: 2px;
+    color: var(--main-color);
+    /* background-color: var(--whitish); */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); */
+  margin: 0 auto;
+  /* height: 80%;
+  width: 80%; */
+padding-top: 40px;
+  color: var(--whitish);
+  justify-items: center;
+}
+
+.box-wrap {
+    position:relative;
+    width: 90%;
+    height: 85%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--dark-grey);
+    border: 1px solid #232935;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 3%; */
+    /* padding: 1%; */
+}
+
+.box-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.box-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+  border: 2px solid transparent;
+}
+.box-overlay h5{
+    position: absolute;
+  bottom: 40px;
+  width:70%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 20px;
+  text-align: center;
+    color: #fdfeff;
+}
+.box-overlay p{
+  width: 70%;
+}
+.box-wrap:hover .box-overlay {
+    opacity: 1;
+    border: 1px solid #fdfeff;
+    margin: 20px;
+    background: transparent;
+}
+.box-wrap:hover img{
+        background-color: #3f4551;
+        opacity: 0.5;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+
+
+.box-overlay-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  color: var(--black-grey);
+  border: 1px solid #3f4551;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 26px;
+  display: flex;
+  opacity: .8;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.inner-circle {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box-overlay p {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--whitish);
+  font-size: 16px;
+  text-align: center;
+}
+
+.img-link{
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+font-weight: 400;
+
+  text-align: left;
+  color: #fdfeff;
+  margin: 1.5rem;
+}
+
+
+.hire-me {
+ 
+  background-color: var(--main-color);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 40px 40px;
+ 
+ 
+ 
+}
+.btn-center{
+    /* margin-top: 3%; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media screen and (max-width: 1000px) {
+  #portfolio{
+    padding-top: 80px;
+   
+    padding-bottom: 80px;
+  }
+  .grid-container {
+    display: grid;
+    /* width: 75%; */
+    grid-template-columns: 1fr 1fr;
+  }
+  .bg-head{
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bg-head{
+    display: none;
+  }
+}

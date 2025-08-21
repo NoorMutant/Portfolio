@@ -1,0 +1,14 @@
+.grid-container{
+    display: grid;
+  grid-template-columns:1fr;
+  align-items: start;
+  justify-content: start;
+  width: 80%;
+  margin:0 auto;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color:#a9adb8;
+  align-items: center;
+  justify-items: center;
+}
